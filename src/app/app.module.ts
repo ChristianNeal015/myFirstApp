@@ -3,14 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { ListComponent } from './list/list.component';
+import { FormsModule } from '@angular/forms';
+
+import { HttpClientModule } from '@angular/common/http';
+import { BreweriesPageComponent } from './breweries-page/breweries-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ListComponent,
+    BreweriesPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
